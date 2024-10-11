@@ -1,0 +1,74 @@
+:root {
+  --text-clr: hsl(0, 0%, 100%);
+  --bg-clr: hsl(0, 0%, 8%);
+  --card-bg-clr: hsl(0, 0%, 12%);
+  --btn-bg-clr: hsl(0, 0%, 20%);
+  --place-clr: hsl(75, 94%, 57%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100dvh;
+}
+.card {
+  text-align: center;
+  padding: 40px 33px;
+  background-color: var(--card-bg-clr);
+  width: 400px;
+  border-radius: 10px;
+}
+
+img {
+  border-radius: 50%;
+  width: 110px;
+}
+
+.name {
+    font-size: 1.5rem ;
+}
+
+.descreption {
+  padding: 20px 0 10px 0 ;
+  line-height: 1.3;
+}
+
+.place {
+  color: var(--place-clr);
+}
+.job {
+  padding: 30px 0 23px 0;
+  font-size: 14px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+
+}
+
+.button {
+  background-color: var(--btn-bg-clr);
+  text-decoration: none;
+  display: inline-block;
+  color: var(--text-clr);
+  border-radius: 7px;
+  padding: 10px;
+
+}
+.button:hover {
+  background-color: var(--place-clr);
+  color: var(--card-bg-clr);
+}
+
